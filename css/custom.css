@@ -1,0 +1,126 @@
+div.banner-text h3 a
+{
+	display: block;
+}
+
+span.highlight {
+	color: #8B9798;
+   font: 14px/24px 'opensans-regular', sans-serif;
+   font-weight: bold;
+}
+
+.cbp-ntcontent
+{
+  margin-left: 15px;
+  line-height: 1.6em;
+  text-align: justify;
+}
+
+
+#resume h6
+{
+	margin-bottom: 12px;
+}
+#resume h6 span {
+  border-bottom: 3px solid #11ABB0;
+  padding-bottom: 6px;
+}
+
+#resume ul.role > li
+{
+	position: relative;
+  line-height: 1.6em;
+}
+
+ul.skills li
+{
+    width: 250px;
+  display: inline-block;
+  margin: 0 30px 60px 0px;
+
+}
+
+span.social-links
+{
+	opacity: 0;
+	height: 48px;
+	background: white;
+  	padding: 12px;
+  	border-radius: 5px;
+}
+
+span.social-links a i
+{
+	padding-right: 5px;
+}
+ul.tags
+{
+	margin-top: 30px;
+	margin-left: 0px;
+}
+
+#about .download
+{
+	width: 50% !important;
+}
+
+
+.skillbar {
+  position:relative;
+  display:block;
+  margin-bottom:15px;
+  width:100%;
+  background:#bbb;
+  height:35px;
+  border-radius:5px;
+  transition:0.4s linear;
+  transition-property:width, background-color;
+}
+
+.skillbar-title {
+  margin-left: 5px;
+  position:absolute;
+  top:8px;
+  left:0;
+  font-size:13px;
+  color:#fff;
+  background:#F06000;
+  border-top-left-radius:5px;
+  border-bottom-left-radius:5px;
+}
+
+.skillbar-title span {
+  display:block;
+  background:rgba(0, 0, 0, 0.1);
+  padding:0 20px;
+  height:20px;
+  line-height:20px;
+}
+
+.skillbar-bar {
+  height:35px;
+  width:0px;
+  background:#313131;
+  border-radius:5px;
+}
+
+.skill-bar-percent {
+display:none;
+  position:absolute;
+  right:5px;
+  top:8px;
+  font-size:13px;
+  height:20px;
+  line-height:20px;
+  color: #fff;
+  background: #F06000;
+    border-top-right-radius:5px;
+  border-bottom-right-radius:5px;
+}
+
+.skill-bar-percent span {
+  
+  padding:0 20px;
+  height:20px;
+background: rgba(0, 0, 0, 0.1);
+}

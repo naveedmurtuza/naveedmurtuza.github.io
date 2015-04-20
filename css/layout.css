@@ -109,14 +109,25 @@ header .scrolldown a {
    width: 42px;
    font-size: 42px;
    line-height: 42px;
-   color: #fff;
    border-radius: 100%;
-
-   -webkit-transition: all .3s ease-in-out;
-   -moz-transition: all .3s ease-in-out;
-   -o-transition: all .3s ease-in-out;
-   transition: all .3s ease-in-out;
+-webkit-animation: updown .5s linear 1s infinite alternate;
+  animation: updown .5s linear 1s infinite alternate;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
+/* Chrome, Safari, Opera */
+@-webkit-keyframes updown {
+    from {-webkit-transform: scale(1); bottom: 30px;}
+    to {-webkit-transform: scale(1.2); bottom: 25px;}
+}
+
+/* Standard syntax */
+@keyframes updown {
+    from {transform: scale(1); bottom: 30px;}
+    to {transform: scale(1.2); bottom: 25px;}
+} 
 header .scrolldown a:hover { color: #11ABB0; }
 
 /* primary navigation
@@ -207,8 +218,8 @@ ul#nav li.current a { color: #F06000; }
 }
 #about .profile-pic {
    position: relative;
-   /*width: 120px;
-   height: 120px;*/
+   width: 120px;
+   height: 120px;
    border-radius: 100%;
 }
 #about .contact-details { width: 41.66667%; }

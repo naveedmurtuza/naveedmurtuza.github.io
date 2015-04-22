@@ -4,7 +4,7 @@
 /*
 -----------------------------------------------------------------------------------*/
 
-function wrap (element,social,type,fontawesomeClass) {
+function wrap (element,fontawesomeClass,social,type) {
   type = type !== undefined ? type : "";
   var link = $('<a/>');
   link.attr('href', type + social);
@@ -63,31 +63,31 @@ jQuery(document).ready(function($) {
     span.empty();
     if(classname.indexOf("facebook") > -1)
     {
-      wrap(span,"https://www.facebook.com/naveedmurtuza",classname);
+      wrap(span,classname,"https://www.facebook.com/naveedmurtuza");
     }
     else if(classname.indexOf("stack-overflow") > -1)
     {
-      wrap(span,"http://stackoverflow.com/users/722965/naveed-quadri",classname);
+      wrap(span,classname,"http://stackoverflow.com/users/722965/naveed-quadri");
     }
     else if(classname.indexOf("twitter") > -1)
     {
-      wrap(span,"https://www.twitter.com/naveedquadri",classname);
+      wrap(span,classname,"https://www.twitter.com/naveedquadri");
     }
     else if(classname.indexOf("google") > -1)
     {
-      wrap(span,"naveedmurtuza@gmail.com","mailto:",classname);
+      wrap(span,classname,"naveedmurtuza@gmail.com","mailto:");
     }
     else if(classname.indexOf("linkedin") > -1)
     {
-      wrap(span,"https://sa.linkedin.com/in/naveedquadri",classname);
+      wrap(span,classname,"https://sa.linkedin.com/in/naveedquadri");
     }
     else if(classname.indexOf("github") > -1)
     {
-      wrap(span,"https://www.github.com/naveedmurtuza",classname);
+      wrap(span,classname,"https://www.github.com/naveedmurtuza");
     }
     else if(classname.indexOf("skype") > -1)
     {
-      wrap(span,"naveedmurtuza","callto:",classname);
+      wrap(span,classname,"naveedmurtuza","callto:");
     }
     $( span).animate({opacity: 1}, 700);
     e.preventDefault();
